@@ -92,12 +92,12 @@
       margin-bottom: 30px;
     }
 
-    .section-header {
+    .section-title {
       font-family: 'Oswald', sans-serif;
       font-size: 2.5rem;
       color: #fff;
-      margin-bottom: 30px;
       text-align: center;
+      margin-bottom: 30px;
     }
 
     .services-section {
@@ -111,8 +111,8 @@
     .services-box {
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
-      max-width: 600px;
-      margin: 40px auto;
+      max-width: 500px;
+      margin: 0 auto 40px;
       padding: 40px 30px;
       text-align: left;
     }
@@ -124,28 +124,37 @@
 
     .services-box li {
       font-size: 1.3rem;
-      margin: 12px 0;
-      padding-left: 2.5em;
-      text-indent: -1.5em;
+      margin: 16px 0;
+      display: flex;
+      align-items: flex-start;
+    }
+
+    .services-box li::before {
+      content: '✅';
+      margin-right: 10px;
+      flex-shrink: 0;
     }
 
     .services-box .cta-button {
       display: block;
       margin-top: 30px;
-      text-align: center;
     }
 
-    .quote-form-section {
-      padding: 60px 20px;
-      max-width: 600px;
-      margin: 0 auto;
-    }
-
-    .quote-form-section h2 {
+    .section-heading {
+      color: #2e7d32;
       font-family: 'Oswald', sans-serif;
-      font-size: 2rem;
-      margin-bottom: 30px;
+      font-size: 2.5rem;
+      margin: 60px 0 30px;
       text-align: center;
+    }
+
+    .quote-form {
+      background-color: #fff;
+      padding: 40px;
+      max-width: 600px;
+      margin: 60px auto;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
     }
 
     .quote-form label {
@@ -156,15 +165,20 @@
 
     .quote-form input {
       width: 100%;
-      padding: 10px;
+      padding: 12px;
       margin-bottom: 20px;
+      border-radius: 4px;
       border: 1px solid #ccc;
-      border-radius: 6px;
-      font-size: 1rem;
     }
 
-    .quote-form .cta-button {
-      width: 100%;
+    .quote-form button {
+      background-color: #78C976;
+      color: white;
+      border: none;
+      padding: 16px;
+      font-size: 1.2rem;
+      border-radius: 6px;
+      cursor: pointer;
     }
 
     @media (max-width: 768px) {
@@ -172,23 +186,17 @@
         font-size: 2.2rem;
       }
 
-      .hero .subtext {
-        font-size: 1.3rem;
-      }
-
-      .cta-button {
-        font-size: 1.2rem;
-        padding: 12px 24px;
-      }
-
+      .hero .subtext,
+      .cta-button,
       .lifestyle-section .list-item,
       .lifestyle-section .question,
-      .lifestyle-section .punchline {
-        font-size: 1.3rem;
+      .lifestyle-section .punchline,
+      .services-box li {
+        font-size: 1.4rem;
       }
 
-      .services-box li {
-        font-size: 1.2rem;
+      .services-box {
+        padding: 30px 20px;
       }
     }
   </style>
@@ -220,79 +228,78 @@
 
   <!-- Services Section -->
   <section class="services-section">
-    <h2 class="section-header">OUR SERVICES</h2>
+    <h2 class="section-title">OUR SERVICES</h2>
     <div class="services-box">
       <ul>
-        <li>✅ VACUUMING</li>
-        <li>✅ MOPPING</li>
-        <li>✅ DUSTING</li>
-        <li>✅ TOILETS</li>
-        <li>✅ SHOWERS</li>
-        <li>✅ GROUT</li>
-        <li>✅ INTERNAL WINDOWS</li>
-        <li>✅ EXTERNAL WINDOWS</li>
+        <li>vacuuming</li>
+        <li>mopping</li>
+        <li>dusting</li>
+        <li>toilets</li>
+        <li>showers</li>
+        <li>grout</li>
+        <li>internal windows</li>
+        <li>external windows</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h2 class="section-header">WHAT YOU NEED TO PROVIDE</h2>
+    <h2 class="section-title">WHAT YOU NEED TO PROVIDE</h2>
     <div class="services-box">
       <ul>
-        <li>✅ ACCESS TO YOUR HOME DURING SCHEDULED TIMES</li>
-        <li>✅ ANY SPECIAL INSTRUCTIONS OR AREAS TO FOCUS ON</li>
-        <li>✅ CLEANING SUPPLIES (OPTIONAL — WE CAN BRING OUR OWN)</li>
-        <li>✅ PETS SECURED OR INFORMED ABOUT IN ADVANCE</li>
+        <li>access to your home during scheduled times</li>
+        <li>any special instructions or areas to focus on</li>
+        <li>cleaning supplies (optional — we can bring our own)</li>
+        <li>pets secured or informed about in advance</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h2 class="section-header">WHERE AND WHEN WE WORK</h2>
+    <h2 class="section-title">WHERE AND WHEN WE WORK</h2>
     <div class="services-box">
       <ul>
-        <li>✅ SERVING [YOUR SERVICE AREAS HERE] — ASK IF YOUR AREA IS COVERED</li>
-        <li>✅ AVAILABLE WEEKDAYS FROM 8 AM TO 6 PM, SATURDAYS BY APPOINTMENT</li>
-        <li>✅ FLEXIBLE SCHEDULING TO FIT YOUR BUSY LIFE</li>
+        <li>serving [your service areas here] — ask if your area is covered</li>
+        <li>available weekdays from 8 am to 6 pm, saturdays by appointment</li>
+        <li>flexible scheduling to fit your busy life</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h2 class="section-header">PRICING & PAYMENT</h2>
+    <h2 class="section-title">PRICING & PAYMENT</h2>
     <div class="services-box">
       <ul>
-        <li>✅ COMPETITIVE FLAT RATES OR HOURLY PRICING BASED ON YOUR NEEDS</li>
-        <li>✅ NO HIDDEN FEES — CLEAR, UPFRONT QUOTES</li>
-        <li>✅ PAYMENT ACCEPTED VIA CREDIT CARD, PAYPAL, OR CASH</li>
-        <li>✅ EASY ONLINE BOOKING AND PAYMENT OPTIONS</li>
+        <li>competitive flat rates or hourly pricing based on your needs</li>
+        <li>no hidden fees — clear, upfront quotes</li>
+        <li>payment accepted via credit card, paypal, or cash</li>
+        <li>easy online booking and payment options</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h2 class="section-header">TRUST & RELIABILITY</h2>
+    <h2 class="section-title">TRUST & RELIABILITY</h2>
     <div class="services-box">
       <ul>
-        <li>✅ FULLY BACKGROUND-CHECKED AND INSURED CLEANERS</li>
-        <li>✅ SAME TRUSTED CLEANER ASSIGNED TO YOUR HOME WHEN POSSIBLE</li>
-        <li>✅ 100% SATISFACTION GUARANTEE — WE RE-CLEAN IF YOU'RE NOT HAPPY</li>
-        <li>✅ EXCELLENT REVIEWS FROM HAPPY CUSTOMERS</li>
+        <li>fully background-checked and insured cleaners</li>
+        <li>same trusted cleaner assigned to your home when possible</li>
+        <li>100% satisfaction guarantee — we re-clean if you're not happy</li>
+        <li>excellent reviews from happy customers</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h2 class="section-header">BOOKING & COMMUNICATION</h2>
+    <h2 class="section-title">BOOKING & COMMUNICATION</h2>
     <div class="services-box">
       <ul>
-        <li>✅ EASY ONLINE OR PHONE BOOKING WITH CONFIRMATIONS AND REMINDERS</li>
-        <li>✅ FLEXIBLE CANCELLATION AND RESCHEDULING POLICIES</li>
-        <li>✅ OPEN CHANNELS FOR SPECIAL INSTRUCTIONS OR QUESTIONS</li>
+        <li>easy online or phone booking with confirmations and reminders</li>
+        <li>flexible cancellation and rescheduling policies</li>
+        <li>open channels for special instructions or questions</li>
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
   </section>
 
-  <!-- Contact Form Section -->
-  <section class="quote-form-section" id="contact-form">
-    <h2>Get Your Free Quote</h2>
-    <form class="quote-form">
+  <!-- Quote Form -->
+  <section id="contact-form" class="quote-form">
+    <form>
       <label for="name">Name</label>
       <input type="text" id="name" name="name" required>
 
@@ -305,7 +312,7 @@
       <label for="suburb">Suburb</label>
       <input type="text" id="suburb" name="suburb" required>
 
-      <button type="submit" class="cta-button">Submit</button>
+      <button type="submit">SUBMIT QUOTE REQUEST</button>
     </form>
   </section>
 
