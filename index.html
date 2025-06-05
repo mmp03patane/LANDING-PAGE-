@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reliable House Cleaning Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -103,7 +103,7 @@
     .services-section h2 {
       font-family: 'Oswald', sans-serif;
       font-size: 2.5rem;
-      color: #fff;
+      color: white;
       margin-bottom: 30px;
     }
 
@@ -111,13 +111,21 @@
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       max-width: 500px;
-      margin: 0 auto 40px auto;
+      margin: 20px auto;
       padding: 40px 30px;
+    }
+
+    .services-box h3 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2rem;
+      color: #2e7d32;
+      margin-bottom: 20px;
     }
 
     .services-box ul {
       list-style: none;
       text-align: left;
+      padding-left: 0;
     }
 
     .services-box li {
@@ -134,46 +142,42 @@
       padding: 60px 20px;
       max-width: 600px;
       margin: 0 auto;
+      background-color: #f2f2f2;
+      border-radius: 12px;
       text-align: center;
     }
 
     .form-section h2 {
       font-family: 'Oswald', sans-serif;
       font-size: 2.5rem;
-      margin-bottom: 30px;
       color: #2e7d32;
+      margin-bottom: 30px;
     }
 
-    form {
+    .form-section form {
       display: flex;
       flex-direction: column;
       gap: 20px;
     }
 
-    input {
-      padding: 14px;
+    .form-section input {
+      padding: 12px;
       font-size: 1rem;
-      border-radius: 6px;
       border: 1px solid #ccc;
+      border-radius: 6px;
     }
 
-    input:focus {
-      outline: none;
-      border-color: #78C976;
-    }
-
-    .submit-btn {
+    .form-section button {
+      padding: 14px;
+      font-size: 1.2rem;
       background-color: #78C976;
       color: white;
       border: none;
-      font-size: 1.2rem;
-      padding: 14px;
       border-radius: 6px;
       cursor: pointer;
-      transition: background-color 0.3s ease;
     }
 
-    .submit-btn:hover {
+    .form-section button:hover {
       background-color: #5fa958;
     }
 
@@ -231,7 +235,6 @@
   <!-- Services Section -->
   <section class="services-section">
     <h2>OUR SERVICES</h2>
-
     <div class="services-box">
       <ul>
         <li>✅ VACUUMING</li>
@@ -247,27 +250,63 @@
     </div>
 
     <div class="services-box">
+      <h3>What You Need to Provide</h3>
       <ul>
-        <li>✅ DEEP CLEANS</li>
-        <li>✅ MOVE-IN / MOVE-OUT CLEANS</li>
-        <li>✅ AIRBNB CLEANING</li>
-        <li>✅ SPRING CLEANING</li>
-        <li>✅ FORTNIGHTLY & WEEKLY CLEANS</li>
-        <li>✅ CUSTOM CLEANING PACKAGES</li>
+        <li>✅ Access to your home during scheduled times</li>
+        <li>✅ Any special instructions or areas to focus on</li>
+        <li>✅ Cleaning supplies (optional — we can bring our own)</li>
+        <li>✅ Pets secured or informed about in advance</li>
       </ul>
-      <a href="#contact-form" class="cta-button">GET QUOTE</a>
+    </div>
+
+    <div class="services-box">
+      <h3>Where and When We Work</h3>
+      <ul>
+        <li>✅ Serving [Your Service Areas Here] — ask if your area is covered</li>
+        <li>✅ Available weekdays from 8 AM to 6 PM, Saturdays by appointment</li>
+        <li>✅ Flexible scheduling to fit your busy life</li>
+      </ul>
+    </div>
+
+    <div class="services-box">
+      <h3>Pricing & Payment</h3>
+      <ul>
+        <li>✅ Competitive flat rates or hourly pricing based on your needs</li>
+        <li>✅ No hidden fees — clear, upfront quotes</li>
+        <li>✅ Payment accepted via credit card, PayPal, or cash</li>
+        <li>✅ Easy online booking and payment options</li>
+      </ul>
+    </div>
+
+    <div class="services-box">
+      <h3>Trust & Reliability</h3>
+      <ul>
+        <li>✅ Fully background-checked and insured cleaners</li>
+        <li>✅ Same trusted cleaner assigned to your home when possible</li>
+        <li>✅ 100% satisfaction guarantee — we re-clean if you're not happy</li>
+        <li>✅ Excellent reviews from happy customers</li>
+      </ul>
+    </div>
+
+    <div class="services-box">
+      <h3>Booking & Communication</h3>
+      <ul>
+        <li>✅ Easy online or phone booking with confirmations and reminders</li>
+        <li>✅ Flexible cancellation and rescheduling policies</li>
+        <li>✅ Open channels for special instructions or questions</li>
+      </ul>
     </div>
   </section>
 
   <!-- Contact Form Section -->
   <section id="contact-form" class="form-section">
-    <h2>GET YOUR FREE QUOTE</h2>
+    <h2>Request a Free Quote</h2>
     <form>
       <input type="text" name="name" placeholder="Your Name" required />
       <input type="email" name="email" placeholder="Your Email" required />
       <input type="tel" name="phone" placeholder="Your Phone Number" required />
       <input type="text" name="suburb" placeholder="Your Suburb" required />
-      <button type="submit" class="submit-btn">SUBMIT</button>
+      <button type="submit">Submit Quote Request</button>
     </form>
   </section>
 
