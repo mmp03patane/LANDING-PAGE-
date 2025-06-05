@@ -4,63 +4,59 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Reliable House Cleaning Services</title>
-  <!-- Google Font: Oswald -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
-    html, body {
+    * {
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
+      box-sizing: border-box;
+    }
+
+    body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f9f9f9;
+      color: #333;
     }
 
     .hero {
+      background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true');
+      background-size: cover;
+      background-position: center;
       height: 100vh;
       width: 100vw;
-      background: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true') no-repeat center center;
-      background-size: cover;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      color: white;
-      padding: 0;
-      margin: 0;
+      padding: 20px;
+      color: #fff;
     }
 
     .hero h1 {
       font-family: 'Oswald', sans-serif;
-      font-size: 4rem;
+      font-size: 3.5rem;
       line-height: 1.3;
-      margin-bottom: 20px;
-      padding: 0 20px;
+      margin-bottom: 25px;
     }
 
-    .subtext {
-      font-size: 1.6rem;
-      font-weight: normal;
-      margin-bottom: 30px;
-      padding: 0 20px;
-      max-width: 900px;
+    .hero .subtext {
+      font-size: 1.4rem;
+      margin-bottom: 25px;
       display: block;
-    }
-
-    .mobile-break {
-      display: none;
+      white-space: pre-line;
     }
 
     .cta-button {
       display: inline-block;
-      padding: 20px 40px;
+      padding: 16px 30px;
       background: #78C976;
       color: #fff;
       text-decoration: none;
-      border-radius: 10px;
-      font-size: 1.6rem;
-      font-weight: normal;
-      box-shadow: 0 6px 12px rgba(120,201,118,0.4);
+      border-radius: 8px;
+      font-size: 1.4rem;
+      font-weight: 600;
+      box-shadow: 0 4px 8px rgba(120, 201, 118, 0.4);
       transition: background-color 0.3s ease;
     }
 
@@ -68,86 +64,97 @@
       background-color: #5fa958;
     }
 
-    /* Mobile Styles */
+    .lifestyle-section {
+      max-width: 700px;
+      margin: 0 auto;
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .lifestyle-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 3.5rem;
+      color: #2e7d32;
+      margin-bottom: 40px;
+      line-height: 1.3;
+    }
+
+    .lifestyle-section .list {
+      font-size: 1.4rem;
+      font-weight: bold;
+      line-height: 2.2rem;
+      color: #333;
+    }
+
+    .lifestyle-section .question {
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-top: 40px;
+      margin-bottom: 20px;
+    }
+
+    .lifestyle-section .punchline {
+      font-size: 1.5rem;
+      color: #d32f2f;
+      font-weight: bold;
+    }
+
     @media (max-width: 768px) {
-      .hero h1 {
-        font-size: 2.4rem;
+      .hero h1,
+      .lifestyle-section h2 {
+        font-size: 2.2rem;
       }
 
-      .subtext {
-        font-size: 1.4rem;
-        margin-top: 10px;
+      .hero .subtext,
+      .lifestyle-section .list {
+        font-size: 1.2rem;
       }
 
       .cta-button {
-        font-size: 1.4rem;
-        padding: 16px 32px;
+        font-size: 1.2rem;
+        padding: 14px 24px;
       }
 
-      .mobile-break {
-        display: inline;
+      .lifestyle-section .question {
+        font-size: 1.1rem;
+      }
+
+      .lifestyle-section .punchline {
+        font-size: 1.3rem;
       }
     }
-    .lifestyle-section {
-  background: #fff;
-  color: #333;
-  padding: 50px 20px;
-  text-align: center;
-  font-size: 1.2rem;
-  line-height: 1.6;
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-.lifestyle-section h2 {
-  font-family: 'Oswald', sans-serif;
-  font-size: 2rem;
-  margin-bottom: 30px;
-}
-
-.lifestyle-section .question {
-  margin-top: 40px;
-  font-size: 1.3rem;
-  font-style: italic;
-}
-
-.lifestyle-section .punchline {
-  font-size: 1.4rem;
-  margin-top: 10px;
-  color: #d32f2f;
-  font-weight: bold;
-}
-
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <div class="hero">
+  <section class="hero">
     <h1>WE CLEAN SO YOU DON’T HAVE TO.<br>GOODBYE MESS... HELLO FREE TIME!</h1>
-    <p class="subtext">
-      Need a fast, reliable clean?<span class="mobile-break"><br></span> Get your free express quote on our cleaning services today.
-    </p>
+    <p class="subtext">Need a fast, reliable clean? 
+Get your free express quote on our cleaning services today.</p>
     <a href="#contact-form" class="cta-button">GET YOUR FREE QUOTE</a>
-  </div>
+  </section>
+
+  <!-- Lifestyle Pain Point Section -->
+  <section class="lifestyle-section">
+    <h2>LET ME GUESS, YOUR AVERAGE WEEK LOOKS LIKE THIS...</h2>
+
+    <div class="list">
+      <p>Work.</p>
+      <p>Waste time in traffic.</p>
+      <p>Grocery shopping.</p>
+      <p>Car needs petrol...</p>
+      <p>Cook dinner.</p>
+      <p>Do the dishes.</p>
+      <p>Social life?</p>
+      <p>Family commitments.</p>
+      <p>Lawn needs mowing...</p>
+    </div>
+
+    <p class="question">...After all this, do you honestly feel like getting elbow deep in rubber gloves to clean toilets and remove suspicious hairs from shower drains?</p>
+
+    <p class="punchline">...I don't think so ❌</p>
+  </section>
 
 </body>
 </html>
-
-<section class="lifestyle-section">
-  <h2>LET ME GUESS, YOUR AVERAGE WEEK LOOKS LIKE THIS...</h2>
-
-  <p>Work.</p>
-  <p>Waste time in traffic.</p>
-  <p>Grocery shopping.</p>
-  <p>Car needs petrol...</p>
-  <p>Cook dinner.</p>
-  <p>Do the dishes.</p>
-  <p>Social life?</p>
-  <p>Family commitments.</p>
-  <p>Lawn needs mowing...</p>
-
-  <p class="question">...After all this, do you honestly feel like getting elbow deep in rubber gloves to clean toilets and remove suspicious hairs from shower drains?</p>
-
-  <p class="punchline">...I don't think so ❌</p>
-</section>
