@@ -11,12 +11,13 @@
       margin: 0;
       padding: 0;
       height: 100%;
+      width: 100%;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
 
     .hero {
       height: 100vh;
-      width: 100%;
+      width: 100vw;
       background: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true') no-repeat center center;
       background-size: cover;
       display: flex;
@@ -25,31 +26,34 @@
       align-items: center;
       text-align: center;
       color: white;
-      padding: 0 20px;
+      padding: 0;
+      margin: 0;
     }
 
     .hero h1 {
       font-family: 'Oswald', sans-serif;
-      font-size: 3.2rem;
+      font-size: 4rem;
       line-height: 1.3;
       margin-bottom: 20px;
+      padding: 0 20px;
     }
 
     .subtext {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       font-weight: normal;
       margin-bottom: 30px;
-      max-width: 700px;
+      padding: 0 20px;
+      max-width: 900px;
     }
 
     .cta-button {
       display: inline-block;
-      padding: 18px 36px;
+      padding: 20px 40px;
       background: #78C976;
       color: #fff;
       text-decoration: none;
-      border-radius: 8px;
-      font-size: 1.5rem;
+      border-radius: 10px;
+      font-size: 1.6rem;
       font-weight: bold;
       box-shadow: 0 6px 12px rgba(120,201,118,0.4);
       transition: background-color 0.3s ease;
@@ -58,105 +62,16 @@
     .cta-button:hover {
       background-color: #5fa958;
     }
-
-    section {
-      background: white;
-      border-radius: 8px;
-      padding: 30px 25px;
-      margin: 25px auto;
-      max-width: 800px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      text-align: left;
-      color: #333;
-    }
-
-    h2 {
-      color: #2e7d32;
-      margin-bottom: 12px;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    p.note {
-      font-size: 14px;
-      color: #777;
-      margin-top: -10px;
-      margin-bottom: 30px;
-      text-align: center;
-    }
   </style>
 </head>
 <body>
 
   <!-- Hero Section -->
-  <section class="hero">
+  <div class="hero">
     <h1>WE CLEAN SO YOU DON’T HAVE TO.<br>GOODBYE MESS... HELLO FREE TIME!</h1>
     <p class="subtext">Need a fast, reliable clean? Get your free express quote on our cleaning services today.</p>
     <a href="#contact-form" class="cta-button">GET YOUR FREE QUOTE</a>
-  </section>
-
-  <!-- Main Content Sections -->
-  <section>
-    <h2>What We Do (And What We Don’t)</h2>
-    <ul>
-      <li>Thorough cleaning of bathrooms, kitchen, living rooms, bedrooms, and floors</li>
-      <li>Deep cleaning options available on request</li>
-      <li>We do NOT handle laundry, dishes, or organizing (unless arranged separately)</li>
-      <li>Bring your own cleaning supplies or we can provide them for a small fee</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>What You Need to Provide</h2>
-    <ul>
-      <li>Access to your home during scheduled times</li>
-      <li>Any special instructions or areas to focus on</li>
-      <li>Cleaning supplies (optional — we can bring our own)</li>
-      <li>Pets secured or informed about in advance</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Where and When We Work</h2>
-    <ul>
-      <li>Serving [Your Service Areas Here] — ask if your area is covered</li>
-      <li>Available weekdays from 8 AM to 6 PM, Saturdays by appointment</li>
-      <li>Flexible scheduling to fit your busy life</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Pricing & Payment</h2>
-    <ul>
-      <li>Competitive flat rates or hourly pricing based on your needs</li>
-      <li>No hidden fees — clear, upfront quotes</li>
-      <li>Payment accepted via credit card, PayPal, or cash</li>
-      <li>Easy online booking and payment options</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Trust & Reliability</h2>
-    <ul>
-      <li>Fully background-checked and insured cleaners</li>
-      <li>Same trusted cleaner assigned to your home when possible</li>
-      <li>100% satisfaction guarantee — we re-clean if you're not happy</li>
-      <li>Excellent reviews from happy customers</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Booking & Communication</h2>
-    <ul>
-      <li>Easy online or phone booking with confirmations and reminders</li>
-      <li>Flexible cancellation and rescheduling policies</li>
-      <li>Open channels for special instructions or questions</li>
-    </ul>
-  </section>
-
-  <p class="note">No obligation. No hidden fees. Just a clean home waiting for you.</p>
+  </div>
 
 </body>
 </html>
