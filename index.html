@@ -7,33 +7,48 @@
   <!-- Google Fonts: Oswald -->
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       background: #f9f9f9;
       color: #333;
-      margin: 0;
-      padding: 20px;
-      text-align: center;
     }
+
     /* Hero Section */
     .hero {
-      background-color: #000;
+      background: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/General-Cleaning.jpg?raw=true') no-repeat center center;
+      background-size: cover;
       color: #fff;
-      padding: 80px 20px 40px;
-      font-family: 'Oswald', sans-serif;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 20px;
     }
+
     .hero h1 {
+      font-family: 'Oswald', sans-serif;
       font-size: 2.4rem;
       font-weight: 700;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
       line-height: 1.3;
+      max-width: 90%;
     }
+
     .subtext {
       font-family: sans-serif;
       font-size: 20px;
       margin-bottom: 20px;
       color: #ffffff;
     }
+
     .cta-button {
       display: inline-block;
       padding: 12px 20px;
@@ -46,33 +61,60 @@
       box-shadow: 0 4px 8px rgba(120,201,118,0.4);
       transition: background-color 0.3s ease;
     }
+
     .cta-button:hover {
       background-color: #5fa958;
     }
+
     /* Content Sections */
     section {
       background: white;
-      border-radius: 8px;
-      padding: 20px 25px;
-      margin: 25px auto;
-      max-width: 700px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      border-radius: 0;
+      padding: 40px 20px;
+      margin: 0 auto;
+      max-width: 800px;
+      box-shadow: none;
       text-align: left;
-      color: #333;
     }
+
     h2 {
       color: #2e7d32;
       margin-bottom: 12px;
     }
+
     ul {
       padding-left: 20px;
     }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
     p.note {
       font-size: 14px;
       color: #777;
       margin-top: -10px;
       margin-bottom: 30px;
       text-align: center;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 1.8rem;
+      }
+
+      .subtext {
+        font-size: 18px;
+      }
+
+      .cta-button {
+        font-size: 20px;
+        padding: 10px 18px;
+      }
+
+      section {
+        padding: 30px 15px;
+      }
     }
   </style>
 </head>
