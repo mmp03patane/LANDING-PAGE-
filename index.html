@@ -171,6 +171,25 @@
         font-size: 1.2rem;
       }
     }
+    .services-box .cta-button {
+  display: block;
+  margin: 30px auto 0; /* space above, center horizontally */
+  padding: 14px 28px;
+  background: #78C976;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 22px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(120,201,118,0.4);
+  transition: background-color 0.3s ease;
+  width: fit-content; /* button fits text width */
+  cursor: pointer;
+}
+
+.services-box .cta-button:hover {
+  background-color: #5fa958;
+}
   </style>
 </head>
 <body>
@@ -219,5 +238,7 @@ Get your free express quote on our cleaning services today.</p>
     <p>✅ GROUT</p>
     <p>✅ INTERNAL WINDOWS</p>
     <p>✅ EXTERNAL WINDOWS</p>
+    
+    <a href="#contact-form" class="cta-button">GET QUOTE</a>
   </div>
 </section>
