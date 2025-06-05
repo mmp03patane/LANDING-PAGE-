@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reliable House Cleaning Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -19,44 +19,40 @@
     }
 
     .hero {
-      background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true');
-      background-size: cover;
-      background-position: center;
+      background: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true') no-repeat center center/cover;
+      color: #fff;
       height: 100vh;
-      width: 100vw;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       text-align: center;
-      padding: 20px;
-      color: #fff;
+      padding: 0 20px;
     }
 
     .hero h1 {
       font-family: 'Oswald', sans-serif;
-      font-size: 3.5rem;
+      font-size: 3rem;
       line-height: 1.3;
-      margin-bottom: 25px;
+      margin-bottom: 30px;
     }
 
-    .hero .subtext {
-      font-size: 1.4rem;
+    .subtext {
+      font-size: 1.2rem;
+      color: #fff;
       margin-bottom: 25px;
-      display: block;
-      white-space: pre-line;
     }
 
     .cta-button {
       display: inline-block;
-      padding: 16px 30px;
+      padding: 14px 28px;
       background: #78C976;
       color: #fff;
       text-decoration: none;
-      border-radius: 8px;
+      border-radius: 6px;
       font-size: 1.4rem;
-      font-weight: 600;
-      box-shadow: 0 4px 8px rgba(120, 201, 118, 0.4);
+      font-weight: bold;
+      box-shadow: 0 4px 8px rgba(120,201,118,0.4);
       transition: background-color 0.3s ease;
     }
 
@@ -65,54 +61,96 @@
     }
 
     .lifestyle-section {
-      max-width: 700px;
-      margin: 0 auto;
       text-align: center;
       padding: 60px 20px;
+      max-width: 700px;
+      margin: 0 auto;
     }
 
     .lifestyle-section h2 {
       font-family: 'Oswald', sans-serif;
-      font-size: 3.5rem;
-      color: #2e7d32;
-      margin-bottom: 40px;
-      line-height: 1.3;
-    }
-
-    .lifestyle-section .list {
-      font-size: 1.4rem;
-      font-weight: bold;
-      line-height: 2.2rem;
-      color: #333;
+      font-size: 2.4rem;
+      color: #004d40;
+      margin-bottom: 30px;
     }
 
     .lifestyle-section .question {
-      font-size: 1.3rem;
-      font-style: italic;
-      margin-top: 40px;
-      margin-bottom: 20px;
+      font-size: 1.2rem;
+      font-weight: bold;
+      line-height: 2;
+      color: #333;
     }
 
     .lifestyle-section .punchline {
-      font-size: 1.5rem;
-      color: #d32f2f;
+      font-style: italic;
+      font-size: 1rem;
+      margin-top: 30px;
+    }
+
+    .services-section {
+      background-color: #e9f7ef;
+      padding: 60px 20px;
+    }
+
+    .services-section h2 {
+      font-size: 2rem;
+      text-align: center;
+      color: #000;
+      margin-bottom: 30px;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 700;
+    }
+
+    .services-box {
+      background-color: #f0f0f0;
+      border-radius: 12px;
+      padding: 30px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: left;
+    }
+
+    .services-box p {
+      font-size: 1.3rem;
+      margin: 10px 0;
+    }
+
+    .services-box .cta-button {
+      display: block;
+      margin: 30px auto 0;
+      padding: 14px 28px;
+      background: #78C976;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1.4rem;
       font-weight: bold;
+      box-shadow: 0 4px 8px rgba(120,201,118,0.4);
+      transition: background-color 0.3s ease;
+      width: fit-content;
+      cursor: pointer;
+    }
+
+    .services-box .cta-button:hover {
+      background-color: #5fa958;
     }
 
     @media (max-width: 768px) {
-      .hero h1,
-      .lifestyle-section h2 {
-        font-size: 2.2rem;
+      .hero h1 {
+        font-size: 2rem;
       }
 
-      .hero .subtext,
-      .lifestyle-section .list {
-        font-size: 1.2rem;
+      .subtext {
+        font-size: 1.1rem;
       }
 
       .cta-button {
         font-size: 1.2rem;
-        padding: 14px 24px;
+        padding: 12px 20px;
+      }
+
+      .lifestyle-section h2 {
+        font-size: 1.8rem;
       }
 
       .lifestyle-section .question {
@@ -120,125 +158,50 @@
       }
 
       .lifestyle-section .punchline {
-        font-size: 1.3rem;
-      }
-    }
-
-    .lifestyle-section .question {
-      font-size: 1.1rem;
-    }
-
-    .lifestyle-section .punchline {
-      font-size: 1.3rem;
-    }
-
-    /* New Services Section */
-    .services-section {
-      max-width: 700px;
-      margin: 0 auto;
-      text-align: center;
-      padding: 60px 20px;
-    }
-
-    .services-section h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 3.5rem;
-      color: #000;
-      margin-bottom: 40px;
-    }
-
-    .services-box {
-      background-color: #f1f1f1;
-      border-radius: 20px;
-      padding: 40px 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 16px;
-    }
-
-    .services-box p {
-      font-size: 1.4rem;
-      color: #333;
-      margin: 0;
-    }
-
-    @media (max-width: 768px) {
-      .services-section h2 {
-        font-size: 2.2rem;
-      }
-
-      .services-box p {
         font-size: 1.2rem;
       }
     }
-    .services-box .cta-button {
-  display: block;
-  margin: 30px auto 0; /* space above, center horizontally */
-  padding: 14px 28px;
-  background: #78C976;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 6px;
-  font-size: 22px;
-  font-weight: bold;
-  box-shadow: 0 4px 8px rgba(120,201,118,0.4);
-  transition: background-color 0.3s ease;
-  width: fit-content; /* button fits text width */
-  cursor: pointer;
-}
-
-.services-box .cta-button:hover {
-  background-color: #5fa958;
-}
   </style>
 </head>
 <body>
-
-  <!-- Hero Section -->
   <section class="hero">
     <h1>WE CLEAN SO YOU DON’T HAVE TO.<br>GOODBYE MESS... HELLO FREE TIME!</h1>
-    <p class="subtext">Need a fast, reliable clean? 
-Get your free express quote on our cleaning services today.</p>
+    <p class="subtext">Need a fast, reliable clean?<br>Get your free express quote on our cleaning services today.</p>
     <a href="#contact-form" class="cta-button">GET YOUR FREE QUOTE</a>
   </section>
 
-  <!-- Lifestyle Pain Point Section -->
   <section class="lifestyle-section">
-    <h2>LET'S BE HONEST, LIFE GETS BUSY...</h2>
-
-    <div class="list">
-      <p>Work.</p>
-      <p>Waste time in traffic.</p>
-      <p>Grocery shopping.</p>
-      <p>Car needs petrol...</p>
-      <p>Cook dinner.</p>
-      <p>Do the dishes.</p>
-      <p>Social life?</p>
-      <p>Family commitments.</p>
-      <p>Lawn needs mowing...</p>
+    <h2>LET'S BE HONEST, LIFE IS BUSY...</h2>
+    <div class="question">
+      Work.<br>
+      Waste time in traffic.<br>
+      Grocery shopping.<br>
+      Car needs petrol...<br>
+      Cook dinner.<br>
+      Do the dishes.<br>
+      Social life?<br>
+      Family commitments.<br>
+      Lawn needs mowing...
     </div>
-
-    <p class="question">...After all this, do you honestly feel like getting elbow deep in rubber gloves to clean toilets and remove suspicious hairs from shower drains?</p>
-
-    <p class="punchline">...I don't think so ❌</p>
+    <p class="punchline">
+      ...After all this, do you honestly feel like getting elbow deep in rubber gloves to clean toilets and remove suspicious hairs from shower drains?<br><br>
+      ...I don't think so ❌
+    </p>
   </section>
 
+  <section class="services-section">
+    <h2>OUR SERVICES</h2>
+    <div class="services-box">
+      <p>✅ VACUUMING</p>
+      <p>✅ MOPPING</p>
+      <p>✅ DUSTING</p>
+      <p>✅ TOILETS</p>
+      <p>✅ SHOWERS</p>
+      <p>✅ GROUT</p>
+      <p>✅ INTERNAL WINDOWS</p>
+      <p>✅ EXTERNAL WINDOWS</p>
+      <a href="#contact-form" class="cta-button">GET QUOTE</a>
+    </div>
+  </section>
 </body>
 </html>
-
-<!-- Services Section -->
-<section class="services-section">
-  <h2>OUR SERVICES</h2>
-  <div class="services-box">
-    <p>✅ VACUUMING</p>
-    <p>✅ MOPPING</p>
-    <p>✅ DUSTING</p>
-    <p>✅ TOILETS</p>
-    <p>✅ SHOWERS</p>
-    <p>✅ GROUT</p>
-    <p>✅ INTERNAL WINDOWS</p>
-    <p>✅ EXTERNAL WINDOWS</p>
-    
-    <a href="#contact-form" class="cta-button">GET QUOTE</a>
-  </div>
-</section>
