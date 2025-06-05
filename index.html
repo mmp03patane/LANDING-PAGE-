@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Reliable House Cleaning Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -111,7 +111,7 @@
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
       max-width: 500px;
-      margin: 0 auto;
+      margin: 0 auto 40px auto;
       padding: 40px 30px;
     }
 
@@ -128,6 +128,53 @@
     .services-box .cta-button {
       display: block;
       margin-top: 30px;
+    }
+
+    .form-section {
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem;
+      margin-bottom: 30px;
+      color: #2e7d32;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    input {
+      padding: 14px;
+      font-size: 1rem;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    input:focus {
+      outline: none;
+      border-color: #78C976;
+    }
+
+    .submit-btn {
+      background-color: #78C976;
+      color: white;
+      border: none;
+      font-size: 1.2rem;
+      padding: 14px;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .submit-btn:hover {
+      background-color: #5fa958;
     }
 
     @media (max-width: 768px) {
@@ -184,6 +231,7 @@
   <!-- Services Section -->
   <section class="services-section">
     <h2>OUR SERVICES</h2>
+
     <div class="services-box">
       <ul>
         <li>✅ VACUUMING</li>
@@ -197,6 +245,30 @@
       </ul>
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
+
+    <div class="services-box">
+      <ul>
+        <li>✅ DEEP CLEANS</li>
+        <li>✅ MOVE-IN / MOVE-OUT CLEANS</li>
+        <li>✅ AIRBNB CLEANING</li>
+        <li>✅ SPRING CLEANING</li>
+        <li>✅ FORTNIGHTLY & WEEKLY CLEANS</li>
+        <li>✅ CUSTOM CLEANING PACKAGES</li>
+      </ul>
+      <a href="#contact-form" class="cta-button">GET QUOTE</a>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section id="contact-form" class="form-section">
+    <h2>GET YOUR FREE QUOTE</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <input type="tel" name="phone" placeholder="Your Phone Number" required />
+      <input type="text" name="suburb" placeholder="Your Suburb" required />
+      <button type="submit" class="submit-btn">SUBMIT</button>
+    </form>
   </section>
 
 </body>
