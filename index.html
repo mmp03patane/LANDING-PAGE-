@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Reliable House Cleaning Services</title>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
   <style>
@@ -41,6 +41,7 @@
 
     .hero .subtext {
       font-size: 1.6rem;
+      font-weight: normal;
       margin-bottom: 30px;
     }
 
@@ -74,11 +75,29 @@
       margin-bottom: 30px;
     }
 
-    .lifestyle-section .list-item,
-    .lifestyle-section .question,
+    .lifestyle-section .list-item {
+      font-size: 1.6rem;
+      font-weight: bold;
+      margin: 8px 0;
+    }
+
+    .lifestyle-section .question {
+      font-size: 1.6rem;
+      font-style: italic;
+      margin: 30px 0 10px;
+    }
+
     .lifestyle-section .punchline {
       font-size: 1.6rem;
-      margin: 8px 0;
+      margin-bottom: 30px;
+    }
+
+    .section-header {
+      font-family: 'Oswald', sans-serif;
+      font-size: 2.5rem;
+      color: #fff;
+      margin-bottom: 30px;
+      text-align: center;
     }
 
     .services-section {
@@ -89,86 +108,63 @@
       text-align: center;
     }
 
-    .services-section h2 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
-      color: white;
-      margin-bottom: 30px;
-    }
-
-    .service-heading {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2rem;
-      color: white;
-      margin: 50px 0 10px;
-    }
-
     .services-box {
       background-color: rgba(255, 255, 255, 0.9);
       border-radius: 12px;
-      max-width: 500px;
-      margin: 20px auto;
+      max-width: 600px;
+      margin: 40px auto;
       padding: 40px 30px;
+      text-align: left;
     }
 
     .services-box ul {
       list-style: none;
-      text-align: left;
       padding-left: 0;
     }
 
     .services-box li {
       font-size: 1.3rem;
       margin: 12px 0;
-      text-transform: uppercase;
+      padding-left: 2.5em;
+      text-indent: -1.5em;
     }
 
     .services-box .cta-button {
       display: block;
       margin-top: 30px;
-    }
-
-    .form-section {
-      padding: 60px 20px;
-      max-width: 600px;
-      margin: 0 auto;
-      background-color: #f2f2f2;
-      border-radius: 12px;
       text-align: center;
     }
 
-    .form-section h2 {
+    .quote-form-section {
+      padding: 60px 20px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .quote-form-section h2 {
       font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
-      color: #2e7d32;
+      font-size: 2rem;
       margin-bottom: 30px;
+      text-align: center;
     }
 
-    .form-section form {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
+    .quote-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
     }
 
-    .form-section input {
-      padding: 12px;
-      font-size: 1rem;
+    .quote-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
       border: 1px solid #ccc;
       border-radius: 6px;
+      font-size: 1rem;
     }
 
-    .form-section button {
-      padding: 14px;
-      font-size: 1.2rem;
-      background-color: #78C976;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-    }
-
-    .form-section button:hover {
-      background-color: #5fa958;
+    .quote-form .cta-button {
+      width: 100%;
     }
 
     @media (max-width: 768px) {
@@ -177,7 +173,7 @@
       }
 
       .hero .subtext {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .cta-button {
@@ -188,7 +184,7 @@
       .lifestyle-section .list-item,
       .lifestyle-section .question,
       .lifestyle-section .punchline {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
       }
 
       .services-box li {
@@ -202,29 +198,29 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>WE CLEAN SO YOU DON’T HAVE TO.<br>GOODBYE MESS... HELLO FREE TIME!</h1>
-    <p class="subtext">NEED A FAST, RELIABLE CLEAN? GET YOUR FREE EXPRESS QUOTE ON OUR CLEANING SERVICES TODAY.</p>
+    <p class="subtext">Need a fast, reliable clean? Get your free express quote on our cleaning services today.</p>
     <a href="#contact-form" class="cta-button">GET YOUR FREE QUOTE</a>
   </section>
 
   <!-- Lifestyle Section -->
   <section class="lifestyle-section">
     <h2>LET ME GUESS, YOUR AVERAGE WEEK LOOKS LIKE THIS...</h2>
-    <p class="list-item">WORK.</p>
-    <p class="list-item">WASTE TIME IN TRAFFIC.</p>
-    <p class="list-item">GROCERY SHOPPING.</p>
-    <p class="list-item">CAR NEEDS PETROL...</p>
-    <p class="list-item">COOK DINNER.</p>
-    <p class="list-item">DO THE DISHES.</p>
-    <p class="list-item">SOCIAL LIFE?</p>
-    <p class="list-item">FAMILY COMMITMENTS.</p>
-    <p class="list-item">LAWN NEEDS MOWING...</p>
-    <p class="question">...AFTER ALL THIS, DO YOU HONESTLY FEEL LIKE GETTING ELBOW DEEP IN RUBBER GLOVES TO CLEAN TOILETS AND REMOVE SUSPICIOUS HAIRS FROM SHOWER DRAINS?</p>
-    <p class="punchline">...I DON'T THINK SO ❌</p>
+    <p class="list-item">Work.</p>
+    <p class="list-item">Waste time in traffic.</p>
+    <p class="list-item">Grocery shopping.</p>
+    <p class="list-item">Car needs petrol...</p>
+    <p class="list-item">Cook dinner.</p>
+    <p class="list-item">Do the dishes.</p>
+    <p class="list-item">Social life?</p>
+    <p class="list-item">Family commitments.</p>
+    <p class="list-item">Lawn needs mowing...</p>
+    <p class="question">...After all this, do you honestly feel like getting elbow deep in rubber gloves to clean toilets and remove suspicious hairs from shower drains?</p>
+    <p class="punchline">...I don't think so ❌</p>
   </section>
 
   <!-- Services Section -->
   <section class="services-section">
-    <h2>OUR SERVICES</h2>
+    <h2 class="section-header">OUR SERVICES</h2>
     <div class="services-box">
       <ul>
         <li>✅ VACUUMING</li>
@@ -239,7 +235,7 @@
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h3 class="service-heading">WHAT YOU NEED TO PROVIDE</h3>
+    <h2 class="section-header">WHAT YOU NEED TO PROVIDE</h2>
     <div class="services-box">
       <ul>
         <li>✅ ACCESS TO YOUR HOME DURING SCHEDULED TIMES</li>
@@ -250,7 +246,7 @@
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h3 class="service-heading">WHERE AND WHEN WE WORK</h3>
+    <h2 class="section-header">WHERE AND WHEN WE WORK</h2>
     <div class="services-box">
       <ul>
         <li>✅ SERVING [YOUR SERVICE AREAS HERE] — ASK IF YOUR AREA IS COVERED</li>
@@ -260,7 +256,7 @@
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h3 class="service-heading">PRICING & PAYMENT</h3>
+    <h2 class="section-header">PRICING & PAYMENT</h2>
     <div class="services-box">
       <ul>
         <li>✅ COMPETITIVE FLAT RATES OR HOURLY PRICING BASED ON YOUR NEEDS</li>
@@ -271,7 +267,7 @@
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h3 class="service-heading">TRUST & RELIABILITY</h3>
+    <h2 class="section-header">TRUST & RELIABILITY</h2>
     <div class="services-box">
       <ul>
         <li>✅ FULLY BACKGROUND-CHECKED AND INSURED CLEANERS</li>
@@ -282,7 +278,7 @@
       <a href="#contact-form" class="cta-button">GET QUOTE</a>
     </div>
 
-    <h3 class="service-heading">BOOKING & COMMUNICATION</h3>
+    <h2 class="section-header">BOOKING & COMMUNICATION</h2>
     <div class="services-box">
       <ul>
         <li>✅ EASY ONLINE OR PHONE BOOKING WITH CONFIRMATIONS AND REMINDERS</li>
@@ -294,14 +290,22 @@
   </section>
 
   <!-- Contact Form Section -->
-  <section id="contact-form" class="form-section">
-    <h2>REQUEST A FREE QUOTE</h2>
-    <form>
-      <input type="text" name="name" placeholder="YOUR NAME" required />
-      <input type="email" name="email" placeholder="YOUR EMAIL" required />
-      <input type="tel" name="phone" placeholder="YOUR PHONE NUMBER" required />
-      <input type="text" name="suburb" placeholder="YOUR SUBURB" required />
-      <button type="submit">SUBMIT QUOTE REQUEST</button>
+  <section class="quote-form-section" id="contact-form">
+    <h2>Get Your Free Quote</h2>
+    <form class="quote-form">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" required>
+
+      <label for="suburb">Suburb</label>
+      <input type="text" id="suburb" name="suburb" required>
+
+      <button type="submit" class="cta-button">Submit</button>
     </form>
   </section>
 
