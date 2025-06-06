@@ -6,392 +6,386 @@
     <title>Reliable House Cleaning Services</title>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet" />
     <style>
-        /* Reset and base styles */
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: #f9f9f9;
-            color: #333;
-            line-height: 1.5;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-        }
+    /* Reset and base styles */
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #f9f9f9;
+        color: #333;
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
 
-        /* Hero Section */
+    /* Global quote spacing fix */
+    .quote-subtext {
+        font-size: 1.2rem;
+        color: #555;
+        margin-bottom: 20px;
+    }
+    #contact-form form {
+        margin-top: 20px; /* space between the subtext and the form */
+    }
+
+    /* Hero Section */
+    .hero {
+        background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 0 20px;
+        color: white;
+    }
+    .hero h1 {
+        font-family: 'Oswald', sans-serif;
+        font-size: clamp(2.5rem, 4.5vw, 4.5rem);
+        line-height: 1.1;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-shadow: 0 0 8px rgba(0,0,0,0.7);
+        user-select: none;
+    }
+    .hero .subtext {
+        font-size: 1.6rem;
+        max-width: 600px;
+        margin-bottom: 30px;
+        text-shadow: 0 0 6px rgba(0,0,0,0.6);
+        user-select: none;
+    }
+    .cta-button {
+        background-color: #78c976;
+        color: #fff;
+        padding: 16px 32px;
+        border: none;
+        border-radius: 6px;
+        font-size: 1.5rem;
+        font-weight: 700;
+        cursor: pointer;
+        text-decoration: none;
+        transition: background-color 0.3s ease;
+        user-select: none;
+        display: inline-block;
+    }
+    .cta-button:hover,
+    .cta-button:focus {
+        background-color: #5fa958;
+        outline: none;
+    }
+
+    /* Lifestyle Section */
+    .lifestyle-section {
+        padding: 60px 20px;
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .lifestyle-section h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.5rem;
+        color: #2e7d32;
+        margin-bottom: 30px;
+        user-select: none;
+    }
+    .lifestyle-section p {
+        font-size: 1.6rem;
+        font-weight: 700;
+        margin: 8px 0;
+        text-transform: none;
+        user-select: none;
+    }
+    .lifestyle-section .question {
+        font-style: italic;
+        margin: 30px 0 30px;
+        font-weight: 500;
+    }
+    .lifestyle-section .punchline {
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-weight: 700;
+    }
+
+    /* Services Section */
+    .services-section {
+        background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/169house-cleaning.JPG?raw=true');
+        background-size: cover;
+        background-position: center;
+        padding: 80px 20px 100px;
+        text-align: center;
+        color: #fff;
+        user-select: none;
+    }
+    .services-section h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.8rem;
+        margin-bottom: 40px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    .services-box,
+    .info-box {
+        background-color: rgba(255, 255, 255, 0.95);
+        border-radius: 12px;
+        max-width: 550px;
+        margin: 0 auto 50px;
+        padding: 40px 30px;
+        text-align: left;
+        color: #333;
+        font-weight: 400;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    }
+
+    .services-box ul,
+    .info-box ul {
+        list-style: none;
+        padding-left: 0;
+    }
+    .services-box li,
+    .info-box li {
+        font-size: 1.4rem;
+        line-height: 1.5;
+        margin-bottom: 18px;
+        position: relative;
+        padding-left: 30px;
+        text-transform: lowercase;
+        word-break: break-word;
+        color: #222;
+    }
+
+    .services-box li::first-letter,
+    .info-box li::first-letter {
+        text-transform: uppercase;
+    }
+    .services-box li::before,
+    .info-box li::before {
+        content: '✅';
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    .services-box .cta-button,
+    .info-box .cta-button {
+        display: block;
+        margin: 30px auto 0 auto;
+        max-width: 240px;
+        font-size: 1.3rem;
+        padding: 14px 28px;
+        text-align: center;
+        color: #fff;
+        background-color: #78c976;
+        border-radius: 6px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        user-select: none;
+        transition: background-color 0.3s ease;
+    }
+    .services-box .cta-button:hover,
+    .info-box .cta-button:hover {
+        background-color: #5fa958;
+        outline: none;
+    }
+
+    .info-heading {
+        max-width: 550px;
+        margin: 0 auto 15px auto;
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.8rem;
+        color: #fff;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        font-weight: 700;
+        user-select: none;
+        text-shadow: 0 0 6px rgba(0,0,0,0.7);
+    }
+
+    /* Contact Form Section */
+    #contact-form {
+        max-width: 600px;
+        margin: 0 auto 80px;
+        padding: 20px;
+        background-color: #f1f1f1;
+        border-radius: 12px;
+        box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+    }
+    #contact-form h2 {
+        font-family: 'Oswald', sans-serif;
+        font-size: 2.2rem;
+        color: #2e7d32;
+        text-align: center;
+        margin-bottom: 25px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        user-select: none;
+    }
+    #contact-form form {
+        display: flex;
+        flex-direction: column;
+    }
+    #contact-form label {
+        font-weight: 600;
+        margin-bottom: 6px;
+        font-size: 1rem;
+        color: #333;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        user-select: none;
+    }
+    #contact-form input {
+        padding: 12px 14px;
+        font-size: 1.2rem;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-family: inherit;
+        transition: border-color 0.3s ease, box-shadow 0.3s ease;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #contact-form input:focus {
+        border-color: #78c976;
+        outline: none;
+        box-shadow: 0 0 5px #78c976;
+    }
+    #contact-form button {
+        padding: 16px;
+        font-size: 1.4rem;
+        background-color: #78c976;
+        color: white;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: 700;
+        transition: background-color 0.3s ease;
+        user-select: none;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #contact-form button:hover,
+    #contact-form button:focus {
+        background-color: #5fa958;
+        outline: none;
+    }
+
+    /* Responsive: Tablets and smaller */
+    @media (max-width: 768px) {
         .hero {
-            background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/cleaning%20169.JPG?raw=true');
-            background-size: cover;
-            background-position: center;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            padding: 0 20px;
-            color: white;
+            padding: 0 30px;
         }
         .hero h1 {
-            font-family: 'Oswald', sans-serif;
-            /* Adjusted font-size for desktop - starts larger, scales down with vw */
-            font-size: clamp(2.5rem, 4.5vw, 4.5rem); /* min-size, preferred-size, max-size */
-            line-height: 1.1;
-            font-weight: 700;
-            margin-bottom: 20px;
-            text-shadow: 0 0 8px rgba(0,0,0,0.7);
-            user-select: none;
+            font-size: clamp(2rem, 9vw, 3.5rem);
         }
         .hero .subtext {
-            font-size: 1.6rem;
-            max-width: 600px;
-            margin-bottom: 30px;
-            text-shadow: 0 0 6px rgba(0,0,0,0.6);
-            user-select: none;
+            font-size: 1.4rem;
         }
         .cta-button {
-            background-color: #78c976;
-            color: #fff;
-            padding: 16px 32px;
-            border: none;
-            border-radius: 6px;
-            font-size: 1.5rem;
-            font-weight: 700;
-            cursor: pointer;
-            text-decoration: none;
-            transition: background-color 0.3s ease;
-            user-select: none;
-            display: inline-block;
-        }
-        .cta-button:hover,
-        .cta-button:focus {
-            background-color: #5fa958;
-            outline: none;
-        }
-
-        /* Lifestyle Section */
-        .lifestyle-section {
-            padding: 60px 20px;
-            max-width: 800px;
-            margin: 0 auto;
-            text-align: center;
-        }
-        .lifestyle-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.5rem;
-            color: #2e7d32;
-            margin-bottom: 30px;
-            user-select: none;
-        }
-        .lifestyle-section p {
-            font-size: 1.6rem;
-            font-weight: 700;
-            margin: 8px 0;
-            text-transform: none;
-            user-select: none;
-        }
-        .lifestyle-section .question {
-    font-style: italic;
-    margin: 30px 0 30px;  /* changed bottom margin to 30px */
-    font-weight: 500;
-}
-
-.lifestyle-section .punchline {
-    margin-top: 0;        /* added to remove any top margin */
-    margin-bottom: 30px;
-    font-weight: 700;
-}
-
-        /* Services Section */
-        .services-section {
-            background-image: url('https://github.com/mmp03patane/LANDING-PAGE-/blob/main/169house-cleaning.JPG?raw=true');
-            background-size: cover;
-            background-position: center;
-            padding: 80px 20px 100px;
-            text-align: center;
-            color: #fff; /* Keep this for general text in this section */
-            user-select: none;
-        }
-        .services-section h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.8rem;
-            margin-bottom: 40px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            text-shadow: 0 0 6px rgba(0,0,0,0.7);
-        }
-
-        /* Boxes with white backgrounds */
-        .services-box,
-        .info-box {
-            background-color: rgba(255, 255, 255, 0.95);
-            border-radius: 12px;
-            max-width: 550px;
-            margin: 0 auto 50px;
-            padding: 40px 30px;
-            text-align: left;
-            color: #333;
-            font-weight: 400;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.12);
-        }
-
-        .services-box ul,
-        .info-box ul {
-            list-style: none;
-            padding-left: 0;
-        }
-        .services-box li,
-.info-box li {
-    font-size: 1.4rem;
-    line-height: 1.5;
-    margin-bottom: 18px;
-    position: relative;
-    padding-left: 30px;
-    text-transform: lowercase;
-    word-break: break-word;
-    color: #222;
-}
-
-/* Capitalize first letter only */
-.services-box li::first-letter,
-.info-box li::first-letter {
-    text-transform: uppercase;
-}
-        .services-box li::before,
-        .info-box li::before {
-            content: '✅';
-            position: absolute;
-            left: 0;
-            top: 0;
-            font-size: 1.3rem;
-            line-height: 1.5;
-        }
-
-        .services-box .cta-button,
-        .info-box .cta-button {
-            display: block;
-            margin: 30px auto 0 auto;
-            max-width: 240px;
             font-size: 1.3rem;
             padding: 14px 28px;
-            text-align: center;
-            color: #fff;
-            background-color: #78c976;
-            border-radius: 6px;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            user-select: none;
-            transition: background-color 0.3s ease;
         }
-        .services-box .cta-button:hover,
-        .info-box .cta-button:hover {
-            background-color: #5fa958;
-            outline: none;
+        .lifestyle-section {
+            padding: 40px 15px;
         }
-
-        /* Info Headings - FIX: Color and font size */
+        .lifestyle-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
+        .lifestyle-section p {
+            font-size: 1.4rem;
+            margin-bottom: 12px;
+        }
+        .services-section {
+            padding: 50px 15px 70px;
+        }
+        .services-section h2 {
+            font-size: 2rem;
+            margin-bottom: 25px;
+        }
         .info-heading {
-            max-width: 550px;
-            margin: 0 auto 15px auto;
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.8rem; /* Matched to .services-section h2 */
-            color: #fff; /* Changed to white */
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            font-weight: 700;
-            user-select: none;
-            text-shadow: 0 0 6px rgba(0,0,0,0.7); /* Added text shadow for visibility on image */
+            font-size: 2rem;
         }
-
-        /* Contact Form Section */
+        .services-box,
+        .info-box {
+            max-width: 100%;
+            padding: 30px 20px;
+            margin-bottom: 40px;
+        }
+        .services-box li,
+        .info-box li {
+            font-size: 1.3rem;
+            margin-bottom: 22px;
+            padding-left: 36px;
+        }
         #contact-form {
-            max-width: 600px;
-            margin: 0 auto 80px;
-            padding: 20px;
-            background-color: #f1f1f1;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            padding: 20px 15px;
+            margin-bottom: 50px;
         }
         #contact-form h2 {
-            font-family: 'Oswald', sans-serif;
-            font-size: 2.2rem;
-            color: #2e7d32;
-            text-align: center;
-            margin-bottom: 25px;
-            text-transform: uppercase;
-            letter-spacing: 1.5px;
-            user-select: none;
-        }
-        #contact-form form {
-            display: flex;
-            flex-direction: column;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
         }
         #contact-form label {
-            font-weight: 600;
-            margin-bottom: 6px;
-            font-size: 1rem;
-            color: #333;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            user-select: none;
+            font-size: 0.95rem;
         }
         #contact-form input {
-            padding: 12px 14px;
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            border: 1px solid #ccc;
-            border-radius: 6px;
-            font-family: inherit;
-            transition: border-color 0.3s ease, box-shadow 0.3s ease;
-            width: 100%; /* Ensure inputs take full width on smaller screens */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-        }
-        #contact-form input:focus {
-            border-color: #78c976;
-            outline: none;
-            box-shadow: 0 0 5px #78c976;
+            font-size: 1.3rem;
+            padding: 14px 12px;
         }
         #contact-form button {
+            font-size: 1.5rem;
+            padding: 18px;
+        }
+    }
+
+    /* Responsive: Small phones */
+    @media (max-width: 400px) {
+        .hero h1 {
+            font-size: clamp(1.8rem, 11vw, 2.5rem);
+        }
+        .cta-button {
+            font-size: 1.1rem;
+            padding: 12px 24px;
+        }
+        .lifestyle-section h2,
+        .services-section h2 {
+            font-size: 1.7rem;
+        }
+        .info-heading {
+            font-size: 1.7rem;
+        }
+        .services-box li,
+        .info-box li {
+            font-size: 1.2rem;
+            padding-left: 30px;
+            margin-bottom: 20px;
+        }
+        #contact-form h2 {
+            font-size: 1.5rem;
+        }
+        #contact-form label {
+            font-size: 0.9rem;
+        }
+        #contact-form input {
+            font-size: 1.1rem;
+        }
+        #contact-form button {
+            font-size: 1.3rem;
             padding: 16px;
-            font-size: 1.4rem;
-            background-color: #78c976;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            cursor: pointer;
-            font-weight: 700;
-            transition: background-color 0.3s ease;
-            user-select: none;
-            width: 100%; /* Ensure button takes full width on smaller screens */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
         }
-        #contact-form button:hover,
-        #contact-form button:focus {
-            background-color: #5fa958;
-            outline: none;
-        }
-
-        /* Responsive: Tablets and smaller */
-        @media (max-width: 768px) {
-            .hero {
-                padding: 0 30px;
-            }
-            .hero h1 {
-                /* Adjusted for mobile - min and max size for better control */
-                font-size: clamp(2rem, 9vw, 3.5rem); /* min-size, preferred-size, max-size */
-            }
-            .hero .subtext {
-                font-size: 1.4rem;
-            }
-            .cta-button {
-                font-size: 1.3rem;
-                padding: 14px 28px;
-            }
-            .lifestyle-section {
-                padding: 40px 15px;
-            }
-            .lifestyle-section h2 {
-                font-size: 2rem;
-                margin-bottom: 25px;
-            }
-            .lifestyle-section p {
-                font-size: 1.4rem;
-                margin-bottom: 12px;
-            }
-            .services-section {
-                padding: 50px 15px 70px;
-            }
-            .services-section h2 {
-                font-size: 2rem;
-                margin-bottom: 25px;
-            }
-            /* Info headings on mobile */
-            .info-heading {
-                font-size: 2rem; /* Consistent with services-section h2 on mobile */
-            }
-            .services-box,
-            .info-box {
-                max-width: 100%;
-                padding: 30px 20px;
-                margin-bottom: 40px;
-            }
-            .services-box li,
-            .info-box li {
-                font-size: 1.3rem;
-                margin-bottom: 22px;
-                padding-left: 36px;
-            }
-            #contact-form {
-                padding: 20px 15px;
-                margin-bottom: 50px;
-            }
-            #contact-form h2 {
-                font-size: 1.8rem;
-                margin-bottom: 20px;
-            }
-            #contact-form label {
-                font-size: 0.95rem;
-            }
-            #contact-form input {
-                font-size: 1.3rem;
-                padding: 14px 12px;
-            }
-            #contact-form button {
-                font-size: 1.5rem;
-                padding: 18px;
-            }
-        }
-
-        /* Responsive: Small phones */
-        @media (max-width: 400px) {
-            .hero h1 {
-                /* Further adjustment for very small screens */
-                font-size: clamp(1.8rem, 11vw, 2.5rem); /* min-size, preferred-size, max-size */
-            }
-            .cta-button {
-                font-size: 1.1rem;
-                padding: 12px 24px;
-            }
-            .lifestyle-section h2,
-            .services-section h2 {
-                font-size: 1.7rem;
-            }
-            /* Info headings on very small phones */
-            .info-heading {
-                font-size: 1.7rem; /* Consistent with services-section h2 on very small phones */
-            }
-            .services-box li,
-            .info-box li {
-                font-size: 1.2rem;
-                padding-left: 30px;
-                margin-bottom: 20px;
-            }
-            #contact-form h2 {
-                font-size: 1.5rem;
-            }
-            #contact-form label {
-                font-size: 0.9rem;
-            }
-            #contact-form input {
-                font-size: 1.1rem;
-            }
-            #contact-form button {
-                font-size: 1.3rem;
-                padding: 16px;
-            }
-            .quote-subtext {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 20px;
-}
-            form {
-  margin-top: 20px; /* space between the subtext and the form */
-}  
-    </style>
+    }
+</style>
 </head>
 <body>
     <section class="hero">
