@@ -142,16 +142,22 @@
             padding-left: 0;
         }
         .services-box li,
-        .info-box li {
-            font-size: 1.4rem;
-            line-height: 1.5;
-            margin-bottom: 18px;
-            position: relative;
-            padding-left: 30px;
-            text-transform: lowercase;
-            word-break: break-word;
-            color: #222;
-        }
+.info-box li {
+    font-size: 1.4rem;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    position: relative;
+    padding-left: 30px;
+    text-transform: lowercase;
+    word-break: break-word;
+    color: #222;
+}
+
+/* Capitalize first letter only */
+.services-box li::first-letter,
+.info-box li::first-letter {
+    text-transform: uppercase;
+}
         .services-box li::before,
         .info-box li::before {
             content: '✅';
